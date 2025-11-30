@@ -20,7 +20,7 @@
 - 🎓 **Ingeniero de Sistemas** graduado
 - 🚀 Desarrollador Backend especializado en **PHP**
 - 💼 Fundador de [@WorkTeam01](https://github.com/WorkTeam01) - Desarrollando soluciones para negocios reales
-- 🌱 Expandiendo conocimientos en **Laravel** y arquitecturas modernas
+- 🌱 Expandiendo conocimientos en **Laravel**, **Python** y arquitecturas modernas
 - 🎯 Enfocado en patrones de diseño y código limpio
 - 💡 Transformando ideas de negocios en aplicaciones funcionales
 - 🔧 Experiencia en desarrollo web full-stack
@@ -28,18 +28,18 @@
 ## 📊 Estadísticas de GitHub
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Jandres25&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jandres25&layout=compact&langs_count=8&theme=tokyonight"/>
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Jandres25&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Jandres25&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
 </div>
 
 ## 🏆 GitHub Trofeos
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Jandres25&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=30" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Jandres25&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
 </p>
 
 ## 🔥 GitHub Streak
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Jandres25&theme=tokyonight" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Jandres25&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
 
 ## 👥 Mi Organización
@@ -67,6 +67,7 @@
       <td align="center"><img src="https://cdn.iconscout.com/icon/free/png-256/php-2752101-2284918.png" width="80" height="80"><br><strong>PHP</strong></td>
       <td align="center"><img src="https://cdn.iconscout.com/icon/free/png-256/laravel-3-1175147.png" width="80" height="80"><br><strong>Laravel</strong></td>
       <td align="center"><img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" width="80" height="80"><br><strong>JavaScript</strong></td>
+      <td align="center"><img src="https://cdn.iconscout.com/icon/free/png-256/python-2-226051.png" width="80" height="80"><br><strong>Python</strong></td>
   </tr>
 </table>
 
@@ -112,7 +113,7 @@ class SystemsEngineer {
     private $degree = 'Ingeniero de Sistemas';
     
     private $currentSkills = [
-        'languages' => ['PHP', 'JavaScript', 'SQL'],
+        'languages' => ['PHP', 'JavaScript', 'SQL', 'Python'],
         'frameworks' => ['Laravel (en progreso)', 'Bootstrap'],
         'patterns' => ['MVC', 'Repository Pattern'],
         'databases' => ['MySQL', 'MariaDB', 'Database Design'],
@@ -122,6 +123,7 @@ class SystemsEngineer {
     
     private $learningPath = [
         'frameworks' => ['Laravel avanzado', 'Vue.js'],
+        'python' => ['Django', 'Automation', 'Scripting'],
         'apis' => ['API REST', 'RESTful design'],
         'patterns' => ['SOLID Principles', 'Design Patterns'],
         'testing' => ['PHPUnit', 'Testing best practices']
@@ -165,10 +167,13 @@ git clone https://github.com/WorkTeam01/Sistema_de_Ventas_PHP
 - **Frontend**: HTML5, CSS3, Bootstrap, AdminLTE
 - **Version Control**: Git, GitHub
 - **Business Solutions**: Sistemas de ventas, Gestión de inventarios
+- **Additional Skills**: Python scripting, Automation
 
 ## 🌱 En mi camino de aprendizaje
 
 - Profundizando en **Laravel** y sus características avanzadas
+- Explorando **Python** para automatización y scripting
+- Experimentando con **Django** para proyectos web
 - Explorando desarrollo de **APIs REST**
 - Mejorando conocimientos en **patrones de diseño**
 - Aprendiendo **testing** y mejores prácticas de desarrollo
