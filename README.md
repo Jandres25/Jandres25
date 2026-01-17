@@ -34,12 +34,12 @@
 
 ## 🏆 GitHub Trofeos
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Jandres25&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
+  <img src="https://github-trophies.vercel.app/?username=Jandres25&theme=tokyonight&row=1&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
 </p>
 
 ## 🔥 GitHub Streak
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Jandres25&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=Jandres25&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
 
 ## 👥 Mi Organización
