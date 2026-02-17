@@ -248,4 +248,8 @@ $bestPractices = [
 
 ⭐️ From [Jandres25](https://github.com/Jandres25) with ❤️
 
+<br>
+
+![GitHub followers](https://img.shields.io/github/followers/Jandres25?style=for-the-badge&color=58a6ff&labelColor=1a1b27&logo=github&label=SEGUIDORES)
+
 </div>
