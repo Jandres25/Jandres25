@@ -135,6 +135,7 @@ class BackendDeveloper
 ## 💼 Proyectos Destacados
 
 ### 🏗️ php-mvc-admin-starter
+
 > Starter template con arquitectura MVC personalizada lista para producción
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
@@ -153,6 +154,25 @@ git clone https://github.com/Jandres25/php-mvc-admin-starter
 
 ---
 
+### 🔐 Encriptacion_PHP
+
+> Sistema de autenticación en PHP con enfoque en seguridad y arquitectura limpia
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![PHPMailer](https://img.shields.io/badge/PHPMailer-0A66C2?style=flat)
+
+- ✅ Hash de contraseñas con bcrypt
+- ✅ Recuperación de contraseña por email
+- ✅ Gestión de usuarios con rol administrador
+- ✅ Front controller + controladores orientados a objetos
+
+```bash
+git clone https://github.com/Jandres25/Encriptacion_PHP
+```
+
+---
+
 ### 🏢 WorkTeam01 — Proyectos Comerciales
 
 <div align="center">
@@ -163,12 +183,12 @@ git clone https://github.com/Jandres25/php-mvc-admin-starter
 
 Mi organización donde construyo soluciones reales para negocios. La mayoría son privados por confidencialidad con los clientes.
 
-| Tipo de solución | Tecnologías |
-|---|---|
-| 💼 Sistemas de gestión empresarial | PHP, MySQL, AdminLTE |
-| 🛒 Plataformas de ventas e inventarios | PHP, MVC, Bootstrap |
-| 📊 Dashboards administrativos | PHP, JS, Charts |
-| 🔧 Soluciones web a medida | Stack personalizado |
+| Tipo de solución                       | Tecnologías          |
+| -------------------------------------- | -------------------- |
+| 💼 Sistemas de gestión empresarial     | PHP, MySQL, AdminLTE |
+| 🛒 Plataformas de ventas e inventarios | PHP, MVC, Bootstrap  |
+| 📊 Dashboards administrativos          | PHP, JS, Charts      |
+| 🔧 Soluciones web a medida             | Stack personalizado  |
 
 **Proyecto público disponible:**
 
@@ -182,20 +202,83 @@ git clone https://github.com/WorkTeam01/Sistema_de_Ventas_PHP
 
 ---
 
-## 🗺️ Roadmap Personal 2025
+## 🗺️ Roadmap Personal 2026
 
 ```
 ✅ PHP Avanzado & MVC Architecture
-✅ MySQL & MariaDB — Diseño de BD
-✅ Git & GitHub — Control de versiones
-✅ Bootstrap & AdminLTE — UI profesional
-🔄 Laravel — Eloquent, Blade, Queues, Auth (en progreso)
-🔄 APIs REST — Diseño y consumo
-⏳ PHPUnit — Testing & TDD
-⏳ Vue.js — Frontend moderno
-⏳ Docker — Contenedores
-⏳ CI/CD — Automatización de despliegues
+✅ MySQL & MariaDB — Diseño e implementación de BD
+✅ Git Flow + Conventional Commits + Code Review
+✅ Testing automatizado + CI/CD en proyecto colaborativo (Python)
+✅ PHPUnit + CI/CD en proyecto PHP privado (sistema-hielo-cambita)
+✅ Automatización de revisión de seguridad en PRs (SistemaReservasHospital)
+🔄 Laravel Avanzado — Queues, Events, Policies, Service Container
+🔄 APIs REST — versionado, documentación y seguridad
+🔄 Estandarizar PHPUnit en todos mis proyectos PHP
+⏳ Docker para entornos reproducibles (dev/prod)
+🔄 Estandarizar CI/CD para todos mis proyectos PHP
+⏳ Vue.js para frontend moderno integrado con backend PHP
 ```
+
+---
+
+## ✅ Verificación de Testing y CI/CD
+
+<div align="center">
+
+![PHPUnit](https://img.shields.io/badge/PHPUnit-Activo_en_privados-4F5D95?style=flat&logo=php&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-Activo_en_privados-2EA44F?style=flat&logo=githubactions&logoColor=white)
+![Security Review](https://img.shields.io/badge/Security_Review-Automatizado-8A2BE2?style=flat&logo=github&logoColor=white)
+![Auto Deploy](https://img.shields.io/badge/Auto_Deploy-Con_quality_gate-0A66C2?style=flat&logo=rocket&logoColor=white)
+
+</div>
+
+### Proyecto con evidencia pública actual
+
+- **Repositorio:** [WorkTeam01/team-practice](https://github.com/WorkTeam01/team-practice)
+- **Tests automatizados:** carpeta `tests/` + ejecución documentada con `pytest -v`
+- **Pipeline CI/CD:** workflow activo en GitHub Actions
+  - Workflow: [`.github/workflows/ci.yml`](https://github.com/WorkTeam01/team-practice/blob/main/.github/workflows/ci.yml)
+  - Ejecuciones: [Actions / CI](https://github.com/WorkTeam01/team-practice/actions/workflows/ci.yml)
+
+### Estado actual de PHPUnit en repos públicos
+
+- En los repos públicos destacados (`php-mvc-admin-starter` y `Sistema_de_Ventas_PHP`) **no se encontró** evidencia directa de `phpunit.xml` ni workflows CI para PHP.
+- Por eso, en 2026 queda como objetivo explícito: integrar PHPUnit + pipeline CI/CD en al menos un proyecto PHP público.
+
+### Evidencia en proyectos privados (repos clave)
+
+| Repositorio privado          | PHPUnit                                                                         | CI/CD                                                       | Automatización de revisión                                                            |
+| ---------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `SistemaReservasHospital`    | ⏳ En proceso (sin `phpunit.xml`/`tests` visibles en rama principal de trabajo) | ✅ Workflows activos (`release-please.yml`, `security.yml`) | ✅ Security review automatizado en PR con Claude Code + release/changelog automáticos |
+| `sistema-hielo-cambita`      | ✅ Activo (`composer.json`, `phpunit.xml`, `tests/`)                            | ✅ Workflows `tests.yml` + `deploy.yml`                     | ✅ Gate de tests antes de deploy + health check + rollback automático                 |
+| `SistemaVentas_HieloCambita` | ⏳ Pendiente (sin `phpunit.xml`/`tests`)                                        | ⏳ Pendiente (sin `.github/workflows` en `main`)            | 🔄 Candidato a estandarización con pipeline y quality gates                           |
+
+### Flujo avanzado con IA en `SistemaReservasHospital`
+
+- ✅ Uso de **`AGENT.md`** como contexto persistente del proyecto.
+- ✅ Uso de **`PROMPTS.md`** como biblioteca de prompts operativos del equipo.
+- ✅ Uso de **MCPs** para integración con **GitHub**, **MySQL** y **ClickUp**.
+- ✅ Uso de **SKILLS** para estandarizar tareas repetibles y mejorar consistencia de desarrollo asistido por IA.
+
+### Automatización de la revisión en repos privados
+
+- **Pull Requests con revisión de seguridad automatizada** (Claude Code en workflow dedicado).
+- **Quality gate de testing**: ejecución de PHPUnit en CI antes de permitir despliegues.
+- **Despliegue condicionado por pruebas exitosas** + verificación de salud posterior.
+- **Rollback automático ante fallo** para reducir riesgo en producción.
+- **Versionado y changelog automáticos** en flujos de release para trazabilidad del proyecto.
+
+> Nota: por confidencialidad, parte de la evidencia detallada vive en repos privados y no siempre es visible en repos públicos.
+
+### ¿Cómo verificar rápido en cualquier proyecto?
+
+Checklist práctico:
+
+1. Existe `phpunit.xml` o `phpunit.xml.dist` en la raíz.
+2. Existe carpeta `tests/` con casos de prueba reales.
+3. En `composer.json` aparece `phpunit/phpunit` (normalmente en `require-dev`).
+4. Existe `.github/workflows/*.yml` con pasos de instalación + ejecución de tests.
+5. En la pestaña **Actions** hay ejecuciones recientes en verde.
 
 ---
 
@@ -249,7 +332,5 @@ $bestPractices = [
 ⭐️ From [Jandres25](https://github.com/Jandres25) with ❤️
 
 <br>
-
-![GitHub followers](https://img.shields.io/github/followers/Jandres25?style=for-the-badge&color=58a6ff&labelColor=1a1b27&logo=github&label=SEGUIDORES)
 
 </div>
