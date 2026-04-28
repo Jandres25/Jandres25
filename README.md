@@ -1,12 +1,12 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:2d6a9f,100:58a6ff&height=220&section=header&text=Jandres25&fontSize=70&fontColor=ffffff&fontAlignY=40&desc=PHP%20Backend%20Developer%20%7C%20Laravel%20%7C%20Systems%20Engineer&descSize=18&descAlignY=62&descAlign=50&animation=fadeIn)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:2d6a9f,100:58a6ff&height=220&section=header&text=Jandres25&fontSize=70&fontColor=ffffff&fontAlignY=40&desc=PHP%20FullStack%20Developer%20%7C%20Laravel%20%7C%20Systems%20Engineer&descSize=18&descAlignY=62&descAlign=50&animation=fadeIn)
 
 </div>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=PHP+Backend+Developer;Laravel+Enthusiast;Clean+Code+Advocate;Building+Real+Business+Solutions;SOLID+%26+Design+Patterns;Open+to+Collaborate!&font=Fira+Code&center=true&width=700&height=60&color=58a6ff&vCenter=true&size=22&pause=1000)](https://github.com/Jandres25)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=PHP+FullStack+Developer;Laravel+Enthusiast;Clean+Code+Advocate;Building+Real+Business+Solutions;SOLID+%26+Design+Patterns;Open+to+Collaborate!&font=Fira+Code&center=true&width=700&height=60&color=58a6ff&vCenter=true&size=22&pause=1000)](https://github.com/Jandres25)
 
 </div>
 
@@ -19,20 +19,21 @@
 
 namespace Jandres25\Profile;
 
-class BackendDeveloper
+class FullStackDeveloper
 {
     public string $name       = 'Jandres25';
-    public string $role       = 'PHP Backend Developer';
+    public string $role       = 'PHP FullStack Developer';
     public string $degree     = 'Ingeniero de Sistemas';
     public string $location   = 'Bolivia 🇧🇴';
     public string $org        = '@WorkTeam01';
 
     /** @var string[] */
     public array $currentFocus = [
+        'Construyendo aplicaciones web completas (Frontend + Backend)',
+        'Aplicando arquitectura MVC + Service Layer en producción',
+        'Integrando Composer para gestión de dependencias',
         'Dominando Laravel y sus características avanzadas',
-        'Diseñando APIs REST escalables',
-        'Aplicando principios SOLID en proyectos reales',
-        'Explorando Python para automatización',
+        'Implementando principios SOLID y patrones de diseño',
     ];
 
     /** @var string[] */
@@ -40,6 +41,7 @@ class BackendDeveloper
         'Código limpio sobre código rápido',
         'Patrones de diseño como herramienta, no como religión',
         'Cada proyecto es una oportunidad de aprender',
+        'La arquitectura sólida facilita el mantenimiento',
     ];
 
     public function getMotivation(): string
@@ -52,6 +54,10 @@ class BackendDeveloper
 ---
 
 ## 🛠️ Stack Tecnológico
+
+### 🎯 FullStack Development
+
+**Mi enfoque**: Desarrollo aplicaciones web completas, desde la base de datos hasta la interfaz de usuario. Construyo **sistemas funcionales de punta a punta** para negocios reales.
 
 ### 🔵 Backend & Lenguajes
 
@@ -135,18 +141,20 @@ class BackendDeveloper
 ## 💼 Proyectos Destacados
 
 ### 🏗️ php-mvc-admin-starter
-
-> Starter template con arquitectura MVC personalizada lista para producción
+> Template base con arquitectura MVC para iniciar proyectos rápidamente
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![AdminLTE](https://img.shields.io/badge/AdminLTE-3C8DBC?style=flat)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
 
-- ✅ Arquitectura MVC limpia y escalable
-- ✅ Autenticación y gestión de sesiones
-- ✅ Panel administrativo con AdminLTE integrado
-- ✅ Ideal como base para proyectos empresariales
+**Lo que era vs lo que es ahora:**
+- ⚙️ **Antes**: Estructura que usaba con clientes (compleja, con múltiples módulos)
+- ✨ **Ahora**: Template simplificado con arquitectura MVC mejorada
+- 🎯 **Enfoque actual**: Solo autenticación básica como punto de partida
+- 🏗️ Estructura MVC clara y lista para extender
+- 📦 Base sólida para nuevos proyectos
+- 🎨 AdminLTE integrado para UI profesional
 
 ```bash
 git clone https://github.com/Jandres25/php-mvc-admin-starter
@@ -155,17 +163,18 @@ git clone https://github.com/Jandres25/php-mvc-admin-starter
 ---
 
 ### 🔐 Encriptacion_PHP
-
-> Sistema de autenticación en PHP con enfoque en seguridad y arquitectura limpia
+> Sistema de autenticación con encriptación de contraseñas y recuperación
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![PHPMailer](https://img.shields.io/badge/PHPMailer-0A66C2?style=flat)
+![Security](https://img.shields.io/badge/Security-FF0000?style=flat&logo=security&logoColor=white)
+![MVC](https://img.shields.io/badge/MVC-Architecture-green?style=flat)
 
-- ✅ Hash de contraseñas con bcrypt
-- ✅ Recuperación de contraseña por email
-- ✅ Gestión de usuarios con rol administrador
-- ✅ Front controller + controladores orientados a objetos
+**Características:**
+- 🔒 Encriptación segura de contraseñas
+- 📧 Sistema de recuperación/restablecimiento de contraseñas
+- 🏗️ Migrado a arquitectura MVC
+- ⚡ Sistema de caché implementado
+- 📚 Proyecto de práctica aplicando buenas prácticas de seguridad
 
 ```bash
 git clone https://github.com/Jandres25/Encriptacion_PHP
@@ -183,102 +192,93 @@ git clone https://github.com/Jandres25/Encriptacion_PHP
 
 Mi organización donde construyo soluciones reales para negocios. La mayoría son privados por confidencialidad con los clientes.
 
-| Tipo de solución                       | Tecnologías          |
-| -------------------------------------- | -------------------- |
-| 💼 Sistemas de gestión empresarial     | PHP, MySQL, AdminLTE |
-| 🛒 Plataformas de ventas e inventarios | PHP, MVC, Bootstrap  |
-| 📊 Dashboards administrativos          | PHP, JS, Charts      |
-| 🔧 Soluciones web a medida             | Stack personalizado  |
+| Tipo de solución | Tecnologías |
+|---|---|
+| 💼 Sistemas de gestión empresarial | PHP, MySQL, AdminLTE |
+| 🛒 Plataformas de ventas e inventarios | PHP, MVC, Bootstrap |
+| 📊 Dashboards administrativos | PHP, JS, Charts |
+| 🔧 Soluciones web a medida | Stack personalizado |
+| 🏥 Sistema de Gestión Hospitalaria | PHP 8.2, MariaDB, MVC |
 
-**Proyecto público disponible:**
+**Proyectos públicos destacados:**
+
+#### Sistema_de_Ventas_PHP
+> Tutorial de sistema de ventas transformado a arquitectura MVC profesional
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Composer](https://img.shields.io/badge/Composer-885630?style=flat&logo=composer&logoColor=white)
+![MVC](https://img.shields.io/badge/MVC-Architecture-green?style=flat)
+
+**La evolución del proyecto:**
+- 📚 **Origen**: Tutorial básico de sistema de ventas
+- 🔄 **Proceso**: Fui refactorizando y mejorando el código
+- 🏗️ **Resultado final**: Estructura MVC clásica implementada
+- 📦 **Composer agregado** para autoloading y dependencias
+- ✨ De código procedural a arquitectura orientada a objetos
+
+**Características actuales:**
+- 📊 Control de inventario
+- 💰 Gestión de ventas
+- 👥 Sistema multiusuario
+- 🎯 Separación clara de responsabilidades (MVC)
 
 ```bash
 git clone https://github.com/WorkTeam01/Sistema_de_Ventas_PHP
-# Sistema completo de ventas con gestión de inventarios
 ```
+
+#### SistemaReservasHospital
+> Sistema de Gestión Hospitalaria (MVP) con arquitectura moderna
+
+![PHP](https://img.shields.io/badge/PHP_8.2-777BB4?style=flat&logo=php&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white)
+![AdminLTE](https://img.shields.io/badge/AdminLTE_3-3C8DBC?style=flat)
+
+- 🏥 Gestión de reservas y citas médicas
+- 📋 Arquitectura MVC con PHP Vanilla 8.2
+- 🎨 Diseño AdminLTE 3 responsive
 
 ---
 
-## 🗺️ Roadmap Personal 2026
+## 💼 Experiencia FullStack
+
+Como **FullStack Developer**, construyo aplicaciones web completas desde la base de datos hasta la interfaz de usuario:
+
+### Backend 🔧
+- **PHP**: MVC, Service Layer, Repository Pattern
+- **Databases**: MySQL, MariaDB - diseño, optimización, migrations
+- **Security**: Password hashing, CSRF, XSS prevention, session management
+- **Tools**: Composer, PHPStorm, XAMPP
+
+### Frontend 🎨
+- **UI Frameworks**: AdminLTE 3, Bootstrap 5
+- **Core**: HTML5, CSS3, JavaScript, jQuery
+- **Components**: DataTables, Select2, Chart.js
+- **Design**: Responsive, Mobile-first, UX principles
+
+### Full Integration 🚀
+- Aplicaciones web completas de punta a punta
+- Sistemas administrativos funcionales
+- Dashboards interactivos con reportes
+- Soluciones de negocio reales para clientes
+
+---
+
+## 🗺️ Roadmap Personal 2025
 
 ```
 ✅ PHP Avanzado & MVC Architecture
-✅ MySQL & MariaDB — Diseño e implementación de BD
-✅ Git Flow + Conventional Commits + Code Review
-✅ Testing automatizado + CI/CD en proyecto colaborativo (Python)
-✅ PHPUnit + CI/CD en proyecto PHP privado (sistema-hielo-cambita)
-✅ Automatización de revisión de seguridad en PRs (SistemaReservasHospital)
-🔄 Laravel Avanzado — Queues, Events, Policies, Service Container
-🔄 APIs REST — versionado, documentación y seguridad
-🔄 Estandarizar PHPUnit en todos mis proyectos PHP
-⏳ Docker para entornos reproducibles (dev/prod)
-🔄 Estandarizar CI/CD para todos mis proyectos PHP
-⏳ Vue.js para frontend moderno integrado con backend PHP
+✅ MySQL & MariaDB — Diseño de BD
+✅ Git & GitHub — Control de versiones
+✅ Bootstrap & AdminLTE — UI profesional
+✅ Composer & Autoloading PSR-4
+🔄 Laravel — Eloquent, Blade, Queues, Auth (en progreso)
+⏳ APIs REST — Diseño y consumo
+⏳ PHPUnit — Testing & TDD
+⏳ Vue.js — Frontend moderno
+⏳ Docker — Contenedores
+⏳ CI/CD — Automatización de despliegues
 ```
-
----
-
-## ✅ Verificación de Testing y CI/CD
-
-<div align="center">
-
-![PHPUnit](https://img.shields.io/badge/PHPUnit-Activo_en_privados-4F5D95?style=flat&logo=php&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-Activo_en_privados-2EA44F?style=flat&logo=githubactions&logoColor=white)
-![Security Review](https://img.shields.io/badge/Security_Review-Automatizado-8A2BE2?style=flat&logo=github&logoColor=white)
-![Auto Deploy](https://img.shields.io/badge/Auto_Deploy-Con_quality_gate-0A66C2?style=flat&logo=rocket&logoColor=white)
-
-</div>
-
-### Proyecto con evidencia pública actual
-
-- **Repositorio:** [WorkTeam01/team-practice](https://github.com/WorkTeam01/team-practice)
-- **Tests automatizados:** carpeta `tests/` + ejecución documentada con `pytest -v`
-- **Pipeline CI/CD:** workflow activo en GitHub Actions
-  - Workflow: [`.github/workflows/ci.yml`](https://github.com/WorkTeam01/team-practice/blob/main/.github/workflows/ci.yml)
-  - Ejecuciones: [Actions / CI](https://github.com/WorkTeam01/team-practice/actions/workflows/ci.yml)
-
-### Estado actual de PHPUnit en repos públicos
-
-- En los repos públicos destacados (`php-mvc-admin-starter` y `Sistema_de_Ventas_PHP`) **no se encontró** evidencia directa de `phpunit.xml` ni workflows CI para PHP.
-- Por eso, en 2026 queda como objetivo explícito: integrar PHPUnit + pipeline CI/CD en al menos un proyecto PHP público.
-
-### Evidencia en proyectos privados (repos clave)
-
-| Repositorio privado          | PHPUnit                                                                         | CI/CD                                                       | Automatización de revisión                                                            |
-| ---------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| `SistemaReservasHospital`    | ⏳ En proceso (sin `phpunit.xml`/`tests` visibles en rama principal de trabajo) | ✅ Workflows activos (`release-please.yml`, `security.yml`) | ✅ Security review automatizado en PR con Claude Code + release/changelog automáticos |
-| `sistema-hielo-cambita`      | ✅ Activo (`composer.json`, `phpunit.xml`, `tests/`)                            | ✅ Workflows `tests.yml` + `deploy.yml`                     | ✅ Gate de tests antes de deploy + health check + rollback automático                 |
-| `SistemaVentas_HieloCambita` | ⏳ Pendiente (sin `phpunit.xml`/`tests`)                                        | ⏳ Pendiente (sin `.github/workflows` en `main`)            | 🔄 Candidato a estandarización con pipeline y quality gates                           |
-
-### Flujo avanzado con IA en `SistemaReservasHospital`
-
-- ✅ Uso de **`AGENT.md`** como contexto persistente del proyecto.
-- ✅ Uso de **`PROMPTS.md`** como biblioteca de prompts operativos del equipo.
-- ✅ Uso de **MCPs** para integración con **GitHub**, **MySQL** y **ClickUp**.
-- ✅ Uso de **SKILLS** para estandarizar tareas repetibles y mejorar consistencia de desarrollo asistido por IA.
-
-### Automatización de la revisión en repos privados
-
-- **Pull Requests con revisión de seguridad automatizada** (Claude Code en workflow dedicado).
-- **Quality gate de testing**: ejecución de PHPUnit en CI antes de permitir despliegues.
-- **Despliegue condicionado por pruebas exitosas** + verificación de salud posterior.
-- **Rollback automático ante fallo** para reducir riesgo en producción.
-- **Versionado y changelog automáticos** en flujos de release para trazabilidad del proyecto.
-
-> Nota: por confidencialidad, parte de la evidencia detallada vive en repos privados y no siempre es visible en repos públicos.
-
-### ¿Cómo verificar rápido en cualquier proyecto?
-
-Checklist práctico:
-
-1. Existe `phpunit.xml` o `phpunit.xml.dist` en la raíz.
-2. Existe carpeta `tests/` con casos de prueba reales.
-3. En `composer.json` aparece `phpunit/phpunit` (normalmente en `require-dev`).
-4. Existe `.github/workflows/*.yml` con pasos de instalación + ejecución de tests.
-5. En la pestaña **Actions** hay ejecuciones recientes en verde.
 
 ---
 
@@ -289,13 +289,47 @@ Checklist práctico:
 // Lo que aplico en cada proyecto:
 
 $bestPractices = [
-    'architecture'  => ['MVC', 'Repository Pattern', 'Service Layer'],
+    'architecture'  => [
+        'MVC', 
+        'Repository Pattern', 
+        'Service Layer',
+        'Separation of Concerns'
+    ],
     'principles'    => ['SOLID', 'DRY', 'KISS', 'YAGNI'],
-    'code_quality'  => ['Clean Code', 'PSR-12', 'DocBlocks'],
-    'database'      => ['Migrations', 'Normalization', 'Indexing'],
-    'security'      => ['SQL Injection prevention', 'XSS', 'CSRF', 'Password hashing'],
-    'version_ctrl'  => ['Git Flow', 'Conventional Commits', 'Code Review'],
+    'code_quality'  => [
+        'Clean Code', 
+        'PSR-12', 
+        'PHPDoc', 
+        'Semantic Versioning'
+    ],
+    'dependencies'  => [
+        'Composer',
+        'Autoloading PSR-4',
+        'Dependency Management'
+    ],
+    'database'      => [
+        'Migrations', 
+        'Normalization', 
+        'Indexing',
+        'Query Optimization'
+    ],
+    'security'      => [
+        'SQL Injection prevention',
+        'XSS protection', 
+        'CSRF tokens',
+        'Password hashing (bcrypt/argon2)',
+        'Environment variables (.env)',
+        'Secure session handling'
+    ],
+    'version_ctrl'  => [
+        'Git Flow', 
+        'Conventional Commits', 
+        'Code Review',
+        'CHANGELOG.md'
+    ],
 ];
+
+// Cada proyecto es una oportunidad para mejorar 🚀
 ```
 
 ---
@@ -327,10 +361,8 @@ $bestPractices = [
 
 **"El código limpio siempre parece que fue escrito por alguien a quien le importa."** – Robert C. Martin
 
-🎓 Ingeniero de Sistemas &nbsp;|&nbsp; 💻 PHP Backend Developer &nbsp;|&nbsp; 💼 Fundador de @WorkTeam01 &nbsp;|&nbsp; 🇧🇴 Bolivia
+🎓 Ingeniero de Sistemas &nbsp;|&nbsp; 💻 PHP FullStack Developer &nbsp;|&nbsp; 💼 Fundador de @WorkTeam01 &nbsp;|&nbsp; 🇧🇴 Bolivia
 
 ⭐️ From [Jandres25](https://github.com/Jandres25) with ❤️
-
-<br>
 
 </div>
