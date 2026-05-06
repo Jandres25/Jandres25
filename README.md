@@ -30,10 +30,11 @@ class FullStackDeveloper
     /** @var string[] */
     public array $currentFocus = [
         'Construyendo aplicaciones web completas (Frontend + Backend)',
-        'Aplicando arquitectura MVC + Service Layer en producción',
-        'Integrando Composer para gestión de dependencias',
+        'Aplicando arquitectura MVC en proyectos reales de negocio',
+        'Testing con PHPUnit 11 — Unit & Integration (SQLite in-memory)',
+        'CI/CD con GitHub Actions en proyectos reales',
         'Dominando Laravel y sus características avanzadas',
-        'Implementando principios SOLID y patrones de diseño',
+        'Explorando Service Layer y Repository Pattern en profundidad',
     ];
 
     /** @var string[] */
@@ -141,20 +142,22 @@ class FullStackDeveloper
 ## 💼 Proyectos Destacados
 
 ### 🏗️ php-mvc-admin-starter
-> Template base con arquitectura MVC para iniciar proyectos rápidamente
+> Panel de administración listo para producción — MVC, autenticación, permisos granulares y gestión de usuarios
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP_8.2-777BB4?style=flat&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![AdminLTE](https://img.shields.io/badge/AdminLTE-3C8DBC?style=flat)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
+![Version](https://img.shields.io/badge/v3.2.0-green?style=flat)
 
-**Lo que era vs lo que es ahora:**
-- ⚙️ **Antes**: Estructura que usaba con clientes (compleja, con múltiples módulos)
-- ✨ **Ahora**: Template simplificado con arquitectura MVC mejorada
-- 🎯 **Enfoque actual**: Solo autenticación básica como punto de partida
-- 🏗️ Estructura MVC clara y lista para extender
-- 📦 Base sólida para nuevos proyectos
-- 🎨 AdminLTE integrado para UI profesional
+**Características:**
+- 🔐 Autenticación completa — login, CSRF, anti-session hijacking, Remember Me, timeout de inactividad
+- 👥 Gestión de usuarios — CRUD, imágenes de perfil, activación/desactivación de cuentas
+- 🔑 Permisos granulares por usuario — menú adaptativo según acceso, caché de permisos en sesión
+- 📄 Generación de PDF — informes integrados con TCPDF
+- 📦 Sin Composer — autoloader PSR-4 propio; cero dependencias externas
+- 🎨 UI completa — DataTables, Select2, SweetAlert2, Chart.js incluidos
+- 🏗️ Arquitectura MVC clara y lista para extender con nuevos módulos
 
 ```bash
 git clone https://github.com/Jandres25/php-mvc-admin-starter
@@ -163,17 +166,19 @@ git clone https://github.com/Jandres25/php-mvc-admin-starter
 ---
 
 ### 🔐 Encriptacion_PHP
-> Sistema de autenticación con encriptación de contraseñas y recuperación
+> Sistema de autenticación seguro con encriptación de contraseñas y recuperación por email
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP_8.2-777BB4?style=flat&logo=php&logoColor=white)
 ![Security](https://img.shields.io/badge/Security-FF0000?style=flat&logo=security&logoColor=white)
-![MVC](https://img.shields.io/badge/MVC-Architecture-green?style=flat)
+![Version](https://img.shields.io/badge/v1.4.0-blue?style=flat)
 
 **Características:**
-- 🔒 Encriptación segura de contraseñas
-- 📧 Sistema de recuperación/restablecimiento de contraseñas
-- 🏗️ Migrado a arquitectura MVC
-- ⚡ Sistema de caché implementado
+- 🔒 Contraseñas hasheadas con bcrypt (`password_hash` / `password_verify`)
+- 📧 Recuperación de contraseña — tokens de 256 bits, expiración de 1 hora, uso único
+- 🍪 Remember Me — cookie `HttpOnly`/`SameSite=Strict`, token SHA-256 en BD, rotación en cada uso
+- ⏱️ Session Timeout — expiración por inactividad configurable, limpia la cookie de remember automáticamente
+- ⚡ Caché de listado de usuarios — invalidación automática en cada mutación, con fallback sin caché
+- 🏗️ Front controller + OOP — `AuthController`, `UserController`, prepared statements con MySQLi
 - 📚 Proyecto de práctica aplicando buenas prácticas de seguridad
 
 ```bash
@@ -203,24 +208,27 @@ Mi organización donde construyo soluciones reales para negocios. La mayoría so
 **Proyectos públicos destacados:**
 
 #### Sistema_de_Ventas_PHP
-> Tutorial de sistema de ventas transformado a arquitectura MVC profesional
+> Tutorial de sistema de ventas transformado a arquitectura MVC profesional con testing automatizado
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![Composer](https://img.shields.io/badge/Composer-885630?style=flat&logo=composer&logoColor=white)
 ![MVC](https://img.shields.io/badge/MVC-Architecture-green?style=flat)
+![PHPUnit](https://img.shields.io/badge/PHPUnit-11.x-6C6EAA?style=flat&logo=php&logoColor=white)
+![CI](https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
 
 **La evolución del proyecto:**
 - 📚 **Origen**: Tutorial básico de sistema de ventas
 - 🔄 **Proceso**: Fui refactorizando y mejorando el código
 - 🏗️ **Resultado final**: Estructura MVC clásica implementada
 - 📦 **Composer agregado** para autoloading y dependencias
-- ✨ De código procedural a arquitectura orientada a objetos
+- ✅ **PHPUnit 11** — suites Unit e Integration (SQLite in-memory)
+- 🚀 **CI/CD** — GitHub Actions corre los tests en PHP 8.2 y 8.3
 
 **Características actuales:**
 - 📊 Control de inventario
-- 💰 Gestión de ventas
-- 👥 Sistema multiusuario
+- 💰 Gestión de ventas con facturación PDF (TCPDF)
+- 👥 Sistema multiusuario con roles
 - 🎯 Separación clara de responsabilidades (MVC)
 
 ```bash
@@ -228,15 +236,22 @@ git clone https://github.com/WorkTeam01/Sistema_de_Ventas_PHP
 ```
 
 #### SistemaReservasHospital
-> Sistema de Gestión Hospitalaria (MVP) con arquitectura moderna
+> Sistema de Gestión Hospitalaria (MVP) — citas médicas, pacientes, doctores y auditoría
 
 ![PHP](https://img.shields.io/badge/PHP_8.2-777BB4?style=flat&logo=php&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white)
 ![AdminLTE](https://img.shields.io/badge/AdminLTE_3-3C8DBC?style=flat)
+![Version](https://img.shields.io/badge/v1.3.0-blue?style=flat)
 
-- 🏥 Gestión de reservas y citas médicas
-- 📋 Arquitectura MVC con PHP Vanilla 8.2
-- 🎨 Diseño AdminLTE 3 responsive
+**Características:**
+- 🏥 Wizard de agendamiento de citas — validación de horarios, estados y reprogramación
+- 👨‍⚕️ Gestión de doctores, especialidades y horarios configurables por día e intervalo
+- 🧑‍🤝‍🧑 CRUD de pacientes con historial de citas, búsqueda y paginación
+- 📊 Dashboard con KPIs en tiempo real y gráficos Chart.js filtrados por rol y período
+- 👥 Roles diferenciados — Administrador, Doctor y Recepcionista
+- 📋 Módulo de auditoría — historial completo de acciones sobre citas con exportación
+- 🔐 Login seguro con CSRF, rate limiting y cierre de sesión
+- 🏗️ Arquitectura MVC con PHP Vanilla 8.2, diseño AdminLTE 3 responsive
 
 ---
 
@@ -245,9 +260,10 @@ git clone https://github.com/WorkTeam01/Sistema_de_Ventas_PHP
 Como **FullStack Developer**, construyo aplicaciones web completas desde la base de datos hasta la interfaz de usuario:
 
 ### Backend 🔧
-- **PHP**: MVC, Service Layer, Repository Pattern
-- **Databases**: MySQL, MariaDB - diseño, optimización, migrations
-- **Security**: Password hashing, CSRF, XSS prevention, session management
+- **PHP**: Arquitectura MVC, PDO, control transaccional, fat models
+- **Databases**: MySQL, MariaDB — diseño, normalización, optimización de queries
+- **Security**: Password hashing (bcrypt), CSRF, XSS prevention, session management, Remember Me
+- **Testing**: PHPUnit 11 — Unit & Integration con SQLite in-memory
 - **Tools**: Composer, PHPStorm, XAMPP
 
 ### Frontend 🎨
@@ -261,10 +277,11 @@ Como **FullStack Developer**, construyo aplicaciones web completas desde la base
 - Sistemas administrativos funcionales
 - Dashboards interactivos con reportes
 - Soluciones de negocio reales para clientes
+- CI/CD con GitHub Actions
 
 ---
 
-## 🗺️ Roadmap Personal 2025
+## 🗺️ Roadmap Personal 2026
 
 ```
 ✅ PHP Avanzado & MVC Architecture
@@ -272,64 +289,72 @@ Como **FullStack Developer**, construyo aplicaciones web completas desde la base
 ✅ Git & GitHub — Control de versiones
 ✅ Bootstrap & AdminLTE — UI profesional
 ✅ Composer & Autoloading PSR-4
+✅ PHPUnit 11 — Testing & TDD
+✅ CI/CD — GitHub Actions (PHP 8.2 y 8.3)
 🔄 Laravel — Eloquent, Blade, Queues, Auth (en progreso)
 ⏳ APIs REST — Diseño y consumo
-⏳ PHPUnit — Testing & TDD
 ⏳ Vue.js — Frontend moderno
 ⏳ Docker — Contenedores
-⏳ CI/CD — Automatización de despliegues
 ```
 
 ---
 
-## 📚 Patrones & Buenas Prácticas
+## 📚 Lo que aplico vs lo que estoy explorando
 
 ```php
 <?php
-// Lo que aplico en cada proyecto:
+// Lo que aplico vs lo que estoy explorando:
 
-$bestPractices = [
+$applied = [
     'architecture'  => [
-        'MVC', 
-        'Repository Pattern', 
-        'Service Layer',
-        'Separation of Concerns'
+        'MVC — patrón principal en todos mis proyectos',
+        'Separation of Concerns — controllers, models, views, services',
+        'Fat Models — lógica de negocio en el modelo',
+        'Front Controller — entry point único con router',
     ],
-    'principles'    => ['SOLID', 'DRY', 'KISS', 'YAGNI'],
+    'principles'    => ['DRY', 'KISS', 'SRP (de SOLID)'],
     'code_quality'  => [
-        'Clean Code', 
-        'PSR-12', 
-        'PHPDoc', 
-        'Semantic Versioning'
-    ],
-    'dependencies'  => [
-        'Composer',
-        'Autoloading PSR-4',
-        'Dependency Management'
+        'Clean Code',
+        'PSR-12',
+        'Semantic Versioning',
+        'Conventional Commits',
     ],
     'database'      => [
-        'Migrations', 
-        'Normalization', 
-        'Indexing',
-        'Query Optimization'
+        'PDO Prepared Statements',
+        'Transacciones — beginTransaction / commit / rollBack',
+        'Normalización y diseño relacional',
+        'Migraciones con schema.sql versionado',
     ],
     'security'      => [
-        'SQL Injection prevention',
-        'XSS protection', 
-        'CSRF tokens',
-        'Password hashing (bcrypt/argon2)',
-        'Environment variables (.env)',
-        'Secure session handling'
+        'SQL Injection prevention (PDO)',
+        'XSS — htmlspecialchars() en todas las salidas',
+        'CSRF tokens en formularios y endpoints AJAX',
+        'Password hashing (bcrypt — PASSWORD_DEFAULT)',
+        'Remember Me — HttpOnly, SameSite, token rotado',
+        'Session timeout configurable',
+        'Variables de entorno (.env)',
+    ],
+    'testing'       => [
+        'PHPUnit 11',
+        'Unit Tests — lógica pura sin BD',
+        'Integration Tests — SQLite in-memory',
+        'CI/CD — GitHub Actions (PHP 8.2 y 8.3)',
     ],
     'version_ctrl'  => [
-        'Git Flow', 
-        'Conventional Commits', 
+        'Git Flow',
+        'Conventional Commits',
         'Code Review',
-        'CHANGELOG.md'
+        'CHANGELOG.md',
     ],
 ];
 
-// Cada proyecto es una oportunidad para mejorar 🚀
+$exploring = [
+    'Service Layer'      => 'extraer lógica de negocio compleja fuera del modelo',
+    'Repository Pattern' => 'abstraer el acceso a datos desacoplando modelos',
+    'Laravel'            => 'Eloquent, Blade, Queues, Auth scaffold',
+];
+
+// Cada proyecto es una oportunidad de subir el nivel 🚀
 ```
 
 ---
